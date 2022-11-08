@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>helpers</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!--   관리자 서블릿 -->
+  <servlet>
+  	<servlet-name>Admin</servlet-name>
+  	<servlet-class>com.helpers.app.admin.AdminFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Admin</servlet-name>
+  	<url-pattern>*.admin</url-pattern>
+  </servlet-mapping>
+  
+<!--   게시판 서블릿 -->
+  <servlet>
+  	<servlet-name>Board</servlet-name>
+  	<servlet-class>com.helpers.app.board.BoardFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Board</servlet-name>
+  	<url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+  
+<!--   메인페이지 서블릿 -->
+  <servlet>
+  	<servlet-name>Index</servlet-name>
+  	<servlet-class>com.helpers.app.index.IndexFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Index</servlet-name>
+  	<url-pattern>*.in</url-pattern>
+  </servlet-mapping>
+
+<!-- 멤버 서블릿 -->
+  <servlet>
+  	<servlet-name>Member</servlet-name>
+  	<servlet-class>com.helpers.app.member.MemberFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Member</servlet-name>
+  	<url-pattern>*.me</url-pattern>
+  </servlet-mapping>  
+  
+<!--   문의하기 서블릿 -->
+  <servlet>
+  	<servlet-name>Qna</servlet-name>
+  	<servlet-class>com.helpers.app.qna.QnaFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Qna</servlet-name>
+  	<url-pattern>*.qna</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

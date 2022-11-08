@@ -1,0 +1,720 @@
+@charset 'utf-8';
+/* *{
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    font-family: Noto Sans KR,Malgun Gothic,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #323232;
+    text-align: left;
+    background-color: #fff;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
+    display:block;
+}
+
+div{
+    display: block;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a{
+    color: #323232;
+    background-color: transparent;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+}
+
+address dl, ol, ul{
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.h3, h3{
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    font-weight: 400;
+    letter-spacing: -.03125rem;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#app #app-body {
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+} */
+
+/* mpage-personal */
+.container{
+    width: 100%;
+    max-width: 39.375rem;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mypage-title{
+    font-weight: 500;
+    line-height: 1.41;
+    letter-spacing: -.0462rem;
+    color: #323232;
+    margin: 0;
+    font-size: 2.125rem;
+    padding: 3.125rem 0;
+}
+
+.profile-container{
+    display: inline-block;
+    padding: 1rem 0;
+    margin-bottom: 1.25rem;
+    font-size: 0;
+}
+
+.profile-container-a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #323232;
+    background-color: transparent;
+}
+
+.thumb{
+    display: block;
+    width: 4.375rem;
+    height: 4.375rem;
+    min-width: 4.375rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 0.0625rem solid #f2f2f2;
+}
+
+.user-info{
+    display: block;
+    flex: 1;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 0.75rem;
+}
+
+.user-name{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #323232;
+}
+
+.name-length{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 0.3125rem;
+
+}
+
+.user-type{
+    flex: 0 0 auto;
+}
+
+.user-name .user-type{
+    padding-right: 1.5rem;
+}
+
+.user-id{
+    display: flex;
+    font-size: .75rem;
+    color: #b5b5b5;
+}
+
+.id-length{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 30.1875rem;
+    width: 453.83px;
+}
+
+.account-setting-btn{
+    display: inline-block;
+    border: none;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    padding: 0.25rem 0.625rem;
+    font-size: .75rem;
+    color: #737373;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.underline{
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid;
+    border-color: #f2f2f2;
+}
+
+.menu-underline{
+    padding: 0;
+}
+
+.main-menu{
+    display:flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #323232;
+    margin-top: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.sub-header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.sub-menu-container{
+    padding: 1rem 0;
+}
+
+.sub-menu-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sub-content{
+    flex: auto;
+    text-align: left;
+}
+
+.sub-menu{
+    display: block;
+}
+
+.sub-menu-title{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #323232;
+    padding: 0;
+}
+
+.arrow{
+    font-size: 0;
+}
+
+.right-arrow{
+    font-size: .75rem;
+}
+
+/* organization */
+.organization-title-section{
+    max-width: 60.625rem;
+    padding: 0;
+    margin: 0;
+}
+
+.organization-title{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.account-holder-list{
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.account-holder-link{
+    cursor: pointer;
+}
+
+/* account-info */
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 39.375rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.account-info-title{
+    line-height: 3.125rem;
+    font-size: 2.125rem;
+    font-weight: 500;
+    color: #323232;
+    margin: 3rem, 0px;
+}
+
+.profile-image{
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0 auto;
+}
+
+.user-profile-picture{
+    position: relative;
+
+}
+
+.user-profile-picture-frame{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0.0625rem solid #f2f2f2;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #e1e1e1;
+}
+
+.camera-icon{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+img, svg{
+    vertical-align: middle;
+
+}
+
+img{
+    border-style: none;
+}
+
+.account-info-section{
+    font-size: 1rem;
+    margin: 3rem 0px 5.125rem;
+}
+
+.account-info{
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.item-container{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0px 1rem 0.5rem;
+    border-bottom: 0.0625rem solid rgb(242, 242, 242);
+}
+
+.item{
+    flex: 1 1 0%;
+    color: rgb(50, 50, 50);
+}
+
+.item-title{
+    color: rgb(181, 181, 181);
+}
+
+.item-info{
+    padding-top: 0.25rem;
+}
+
+.delete-account{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* certificate-list */
+
+.my-page-container{
+    max-width: 100%;
+}
+
+.list-container{
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.title-section{
+    max-width: 60.625rem;
+    margin: 3.125rem auto;
+    padding: 0;
+}
+
+.content-section{
+    max-width: 68.625rem;
+    margin: 0 auto 1.25rem;
+}
+
+.content-item-list{
+    display: inline-block;
+    width: 76%;
+}
+
+.content-modal-btn-container{
+    display: inline-block;
+    transform: translate(0%, -95%);
+}
+
+.content-modal-btn{
+    width: 6rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #00a18d;
+    border-color: #00a18d;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+}
+
+
+/* 모달창 */
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.modal-activity-title{
+    text-align: right;
+}
+
+.modal-activity-date{
+    text-align: right;
+}
+
+.modal-account-name{
+    text-align: right;
+}
+
+.modal-content{
+    text-align: left!important;
+}
+
+.modal-date{
+    text-align: center;
+}
+
+.modal-webpage{
+    text-align: center;
+}
+
+
+
+/* .content-list-section{
+
+} */
+
+.content-list{
+    margin: 0;
+    padding: 0;
+}
+
+.content-item{
+    padding: 1.25rem 0.5rem;
+    cursor: pointer;
+    border-bottom: 0.0625rem solid #f4f4f4;
+}
+
+.content-item-location{
+    color: rgb(197,197,197);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.content-title{
+    margin: 0 0 0.25rem;
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 500;
+}
+
+.content{
+    margin: 0 0 0.5rem;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.content-item-date{
+    color: rgb(197,197,197);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+/* my-activity-list, my-post-list */
+
+.tab-list{
+    display: flex;
+    border-bottom: 0.0625rem solid #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.tab{
+    padding: 0.6875rem 0.25rem 0.8125rem;
+    cursor: pointer;
+    color: rgb(169, 169, 169);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 400;
+}
+
+.tab-selected{
+    color: rgb(45, 45, 45);
+    font-size: 14px;
+    line-height: 1.57142857;
+    letter-spacing: -.3px;
+    font-weight: 700;
+    border-bottom: 0.125rem solid #2d2d2d;
+}
+
+/* content-item-list */
+
+.content-item-link{
+    display: inline-block;
+    width: 76%;
+}
+
+.content-item-container{
+    display: block;
+}
+
+.content-udcs-container{
+    display: inline-block;
+    transform: translate(0%, -95%);
+    
+}
+
+.content-update-btn{
+    width: 5rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: #b2b2b2;
+    border-color: #b2b2b2;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+    margin-right: 8px;
+}
+
+.content-delete-btn{
+    width: 5rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: #bc0e0e;
+    border-color: #bc0e0e;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+}
+
+.content-complete-btn{
+    width: 5rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: #3284ff;
+    border-color: #3284ff;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+    margin-right: 8px;
+}
+
+.content-stop-btn{
+    width: 5rem;
+    padding-top: 0.40625rem;
+    padding-right: 0px;
+    padding-bottom: 0.40625rem;
+    padding-left: 0px;
+    border-radius: 6px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: #bc0e0e;
+    border-color: #bc0e0e;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 0.0625rem solid transparent;
+}
+
+
+
+
+
+
+
+
+
+/* certificate-storage, completed-activityl, issue-certificate, scheduled-activity, user-list */
+/* 여기 다시 */
+.my-page-container{
+    max-width: 100%;
+}
+
+.list-container{
+    max-width: 60.625rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.title-section{
+    max-width: 60.625rem;
+    margin: 3.125rem auto;
+    padding: 0;
+}
+
+.no-items{
+    margin: 11.25rem 0;
+    text-align: center!important;
+}
+
+.no-items-title{
+    margin-top: 0.75rem;
+    line-height: normal;
+    font-size: 1.125rem;
+    font-weight: 500;
+    white-space: pre-line;
+}
+
+.help-block{
+    white-space: break-spaces;
+    color: #b5b5b5;
+}
+
+div.modal{ 
+  position:absolute; width:100%; height:100%; background: rgba(0,0,0,0.9); top:0; left:0; display:none;
+}
+
+div.modal_content {
+  width:400px; height:200px;
+  background:#fff; border-radius:10px;
+  position:relative; top:50%; left:50%;
+  margin-top:-100px; margin-left:-200px;
+  text-align:center;
+  box-sizing:border-box; padding:20px;
+  line-height:23px; cursor:pointer;
+}
